@@ -47,8 +47,8 @@ const AudienceSection = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="flex items-center gap-3 mb-8"
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
         >
           <div className="w-12 h-12 rounded-full bg-forest/10 flex items-center justify-center">
             <UserCheck className="w-6 h-6 text-forest" />
@@ -64,8 +64,8 @@ const AudienceSection = () => {
               key={index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
+              viewport={{ once: true, margin: "-30px" }}
+              transition={{ delay: index * 0.08, duration: 0.4, ease: "easeOut" }}
               className="bg-forest/5 rounded-xl p-5 border-l-4 border-forest"
             >
               <h4 className="font-medium mb-1">{item.title}</h4>
@@ -80,8 +80,8 @@ const AudienceSection = () => {
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="flex items-center gap-3 mb-8"
+          viewport={{ once: true, margin: "-50px" }}
+          transition={{ duration: 0.5, ease: "easeOut" }}
         >
           <div className="w-12 h-12 rounded-full bg-muted flex items-center justify-center">
             <UserX className="w-6 h-6 text-muted-foreground" />
@@ -99,8 +99,8 @@ const AudienceSection = () => {
               key={index}
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
+              viewport={{ once: true, margin: "-30px" }}
+              transition={{ delay: index * 0.08, duration: 0.4, ease: "easeOut" }}
               className="bg-card rounded-xl p-5 border border-border"
             >
               <h4 className="font-medium text-muted-foreground mb-1">{item.title}</h4>

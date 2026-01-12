@@ -129,7 +129,7 @@ const RiskMeter = () => {
               <div className="h-2 bg-secondary rounded-full overflow-hidden">
                 <motion.div
                   className={`h-full ${colors.bar} rounded-full`}
-                  initial={{ width: 0 }}
+                  initial={{ width: `${colors.percentage}%` }}
                   animate={{ width: `${colors.percentage}%` }}
                   transition={{ duration: 0.8, ease: "easeOut" }}
                 />
