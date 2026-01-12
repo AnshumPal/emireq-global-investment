@@ -10,8 +10,8 @@ import AudienceSection from "@/components/AudienceSection";
 const fadeInUp = {
   initial: { opacity: 0, y: 30 },
   whileInView: { opacity: 1, y: 0 },
-  viewport: { once: true },
-  transition: { duration: 0.7 } as const,
+  viewport: { once: true, margin: "-100px" },
+  transition: { duration: 0.7, ease: "easeOut" } as const,
 };
 
 const Index = () => {
@@ -104,8 +104,8 @@ const Index = () => {
             <motion.div
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7, delay: 0.2 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
             >
               <MoneyFlowDiagram />
             </motion.div>
@@ -120,8 +120,8 @@ const Index = () => {
             <motion.div
               initial={{ opacity: 0, x: -20 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ duration: 0.7 }}
+              viewport={{ once: true, margin: "-100px" }}
+              transition={{ duration: 0.7, ease: "easeOut" }}
             >
               <RiskMeter />
             </motion.div>
@@ -173,8 +173,8 @@ const Index = () => {
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.7 }}
+            viewport={{ once: true, margin: "-100px" }}
+            transition={{ duration: 0.7, ease: "easeOut" }}
           >
             <h2 className="heading-section text-cream mb-6">
               Still interested? Let's talk.

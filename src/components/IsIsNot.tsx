@@ -24,8 +24,8 @@ const IsIsNot = () => {
       <motion.div
         initial={{ opacity: 0, x: -20 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6 }}
+        viewport={{ once: true, margin: "-50px" }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
         className="bg-forest/5 rounded-2xl p-6 md:p-8"
       >
         <div className="flex items-center gap-3 mb-6">
@@ -43,8 +43,8 @@ const IsIsNot = () => {
               key={index}
               initial={{ opacity: 0, x: -10 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1, duration: 0.4 }}
+              viewport={{ once: true, margin: "-30px" }}
+              transition={{ delay: index * 0.08, duration: 0.4, ease: "easeOut" }}
               className="flex items-start gap-3"
             >
               <div className="mt-1 w-5 h-5 rounded-full bg-forest flex items-center justify-center flex-shrink-0">
@@ -60,8 +60,8 @@ const IsIsNot = () => {
       <motion.div
         initial={{ opacity: 0, x: 20 }}
         whileInView={{ opacity: 1, x: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.6, delay: 0.2 }}
+        viewport={{ once: true, margin: "-50px" }}
+        transition={{ duration: 0.6, delay: 0.15, ease: "easeOut" }}
         className="bg-card rounded-2xl p-6 md:p-8 border border-border"
       >
         <div className="flex items-center gap-3 mb-6">
@@ -79,8 +79,8 @@ const IsIsNot = () => {
               key={index}
               initial={{ opacity: 0, x: 10 }}
               whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 + 0.2, duration: 0.4 }}
+              viewport={{ once: true, margin: "-30px" }}
+              transition={{ delay: index * 0.08 + 0.15, duration: 0.4, ease: "easeOut" }}
               className="flex items-start gap-3"
             >
               <div className="mt-1 w-5 h-5 rounded-full bg-muted flex items-center justify-center flex-shrink-0">

@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { Leaf } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Header = () => {
   return (
@@ -13,12 +13,7 @@ const Header = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full bg-forest flex items-center justify-center">
-              <Leaf className="w-4 h-4 text-cream" />
-            </div>
-            <span className="font-serif text-xl font-medium tracking-tight">
-              Emireq
-            </span>
+            <img src={logo} alt="Emireq" className="h-10 w-auto rounded-lg" />
           </div>
 
           {/* Tagline - Hidden on mobile */}
